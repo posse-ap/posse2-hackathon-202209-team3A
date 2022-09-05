@@ -15,10 +15,10 @@
       ]
     },
     {
-      "name": "yurie",
+      "name": "ゆりえ",
       "children": [
         {
-          "file": "quiz_data/yurie/beginner.json",
+          "file": "quiz_data/ゆりえ/beginner.json",
           "name": "beginner"
         }
       ]
