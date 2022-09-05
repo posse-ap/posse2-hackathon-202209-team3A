@@ -713,11 +713,11 @@ body {
   padding: 30px;
   background-color: rgba(255, 229, 203, 0.45);
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 }
 @media (min-width: 520px) {
   .l-main {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
   }
 }
 
@@ -987,7 +987,7 @@ body {
 }
 .p-match__button {
   color: #ffffff;
-  background-color: #7a93b2;
+  background-color: #53bcd1;
   border-radius: 20px;
   text-align: center;
   line-height: 40px;
@@ -1009,14 +1009,14 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   border-radius: 15px;
-  background-color: #f4c2c2;
+  background-color: #fce8a7;
   padding: 10px;
   box-shadow: 2px 2px 2px black;
   line-height: 2;
 }
 .p-match__result__button {
-  color: #ffffff;
-  background-color: #7a93b2;
+  color: black;
+  background-color: #f4c2c2;
   border-radius: 20px;
   text-align: center;
   line-height: 40px;

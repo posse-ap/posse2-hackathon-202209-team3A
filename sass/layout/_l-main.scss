@@ -6,10 +6,10 @@
   padding: 30px;
   background-color: $color-skin-color;
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 
   @include pc {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
   }
 }
 

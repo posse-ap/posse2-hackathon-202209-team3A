@@ -24,7 +24,7 @@
   &__button {
     // todo(takumi) animation
     color: $color-white;
-    background-color: $color-dark-blue;
+    background-color: $color-light-blue02;
     border-radius: 20px;
     text-align: center;
     line-height: 40px;
@@ -49,15 +49,15 @@
       gap: 10px;
 
       border-radius: 15px;
-      background-color: $color-pink;
+      background-color: $color-yellow;
       padding: 10px;
       box-shadow: 2px 2px 2px black;
 
       line-height: 2;
     }
     &__button {
-      color: $color-white;
-      background-color: $color-dark-blue;
+      color: black;
+      background-color: $color-pink;
       border-radius: 20px;
       text-align: center;
       line-height: 40px;
