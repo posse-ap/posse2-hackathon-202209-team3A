@@ -1,0 +1,54 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-header {
+
+  @include sp {
+    
+  }
+  & ul {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 4;
+
+    @include sp {
+      display: flex;
+      position: static;
+    }
+  }
+  & li {
+    background-color: $color-light-green;
+    border: 1px solid #3CB371;
+    transition-property: background-color;
+    transition-duration: .8s;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    @include sp {
+      width: 50%;
+      border-radius: 6px;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #3CB371;
+      color: $color-light-green;
+    }
+
+    & p {
+      padding: 30px 20px;
+
+      @include sp {
+        padding: 0;
+      }
+    }
+
+    & a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

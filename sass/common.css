@@ -268,6 +268,52 @@ body {
   font-family: "Sawarabi Gothic";
 }
 
+.p-header ul {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .p-header ul {
+    display: flex;
+    position: static;
+  }
+}
+.p-header li {
+  background-color: #baebd6;
+  border: 1px solid #3CB371;
+  transition-property: background-color;
+  transition-duration: 0.8s;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .p-header li {
+    width: 50%;
+    border-radius: 6px;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+.p-header li:hover {
+  background-color: #3CB371;
+  color: #baebd6;
+}
+.p-header li p {
+  padding: 30px 20px;
+}
+@media (max-width: 768px) {
+  .p-header li p {
+    padding: 0;
+  }
+}
+.p-header li a {
+  width: 100%;
+  height: 100%;
+}
+
 .p-main-visual {
   height: 766px;
   background-image: url(../../../img/bg-mainvisual01.jpg);
@@ -339,14 +385,14 @@ body {
     font-size: 26px;
   }
 }
-.p-main-visual__container__inner span {
+.p-main-visual__container__inner p {
   padding-left: 16px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  .p-main-visual__container__inner span {
+  .p-main-visual__container__inner p {
     font-size: 12px;
   }
 }
