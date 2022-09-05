@@ -11,7 +11,6 @@
   },
   {
     "question": "IoTとは何の略でしょう？",
-    "imgPath": "assets/img/quiz/img-quiz03.png",
     "choices": [
       "Internet of Things",
       "Integrate into Technology",
@@ -21,19 +20,16 @@
   },
   {
     "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz04.png",
     "choices": ["Society 5.0", "CyPhy", "SDGs"],
     "answer": "Society 5.0"
   },
   {
     "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz05.png",
     "choices": ["Web3.0", "NFT", "メタバース"],
     "answer": "Web3.0"
   },
   {
     "question": "先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz06.png",
     "choices": ["約2倍", "約5倍", "約11倍", "plus option"],
     "answer": "約5倍"
   }
