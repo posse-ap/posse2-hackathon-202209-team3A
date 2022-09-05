@@ -9,7 +9,6 @@ const level = url.searchParams.get("level");
 const personName = url.searchParams.get("person_name");
 const quizName = url.searchParams.get("quiz_name");
 
-console.log(level, personName, quizName);
 if (!level || !personName || !quizName) {
   window.location.assign("./../../index.html");
   throw new Error("enough parameter not specified");
