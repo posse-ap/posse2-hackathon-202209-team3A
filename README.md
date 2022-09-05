@@ -42,3 +42,7 @@ git commmit -m [commit-message]
 ```sh
 git push origin [branch-name]
 ```
+
+4. githubにアクセスして、PRを作る！
+
+```sh
