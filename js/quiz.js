@@ -63,14 +63,9 @@ const setupQuiz = (quizzes, index) => {
 
 const finishQuiz = (quizzes, score) => {
   const quizResultPath = "./result/index.html";
-  console.log(
-    `${quizResultPath}?person_name=${personName}&quiz_name=${quizName}&level=${Math.floor(
-      score / quizzes.length
-    )}`
-  );
+  const level = Math.floor((score / quizzes.length) * 100);
+  setNewScore(personName, quizName, level, getCurrentDate());
   window.location.assign(
-    `${quizResultPath}?person_name=${personName}&quiz_name=${quizName}&level=${Math.floor(
-      (score / quizzes.length) * 100
-    )}`
+    `${quizResultPath}?person_name=${personName}&quiz_name=${quizName}&level=${level}`
   );
 };

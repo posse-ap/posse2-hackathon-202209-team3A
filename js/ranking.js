@@ -1,9 +1,5 @@
 "use strict";
 
-// todo(takumi) when finished quiz, add score to local storage
-
-const keyPrefix = "posse_";
-
 /*
 JSON format
 [
@@ -47,23 +43,11 @@ const createRanking = () => {
       ranking.push({ name, ...score });
     });
   }
-  ranking.sort((a, b) => b.totalScore - a.totalScore);
+  ranking.sort((a, b) => b.level - a.level);
   return ranking;
 };
 
-const setNewScore = (name, quiz, level, triedAt) => {
-  const key = keyPrefix + name;
-  const scores = JSON.parse(localStorage.getItem(key));
-  const curScore = scores.find((score) => score.quiz === quiz);
-  if (!curScore) {
-    scores.push({ quiz, level, triedAt });
-  } else if (curScore.level < score) {
-    curScore.level = score;
-    curScore.tried_at = triedAt;
-  }
 
-  localStorage.setItem(key, JSON.stringify(scores));
-};
 
 const createRankingCell = (rankingCellTemplate, text) => {
   const rankingCell = rankingCellTemplate.cloneNode(false);
