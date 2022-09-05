@@ -23,12 +23,12 @@
       "name": "ゆりえ",
       "children": [
         {
-          "file": "quiz_data/ゆりえ/beginner.json",
-          "name": "beginner"
-        },
-        {
           "file": "quiz_data/ゆりえ/ほぼゆりえ",
           "name": "ほぼゆりえ"
+        },
+        {
+          "file": "quiz_data/ゆりえ/ゆりえよりゆりえ",
+          "name": "ゆりえよりゆりえ"
         },
         {
           "file": "quiz_data/ゆりえ/初級",
