@@ -4,14 +4,13 @@
 .p-ranking {
   border-collapse: collapse;
   border-spacing: 0;
-  // width: 100%;
   border-radius: 20px;
   font-size: 16px;
   text-align: center;
 
   &__header {
     border-bottom: solid 1px $color-gray;
-    background-color: $color-light-blue;
+    background-color: $color-light-blue02;
     cursor: pointer;
 
     &__item {
@@ -22,13 +21,13 @@
 
   &__row {
     &:nth-child(odd) {
-      background-color: $color-light-blue;
+      background-color: $color-light-blue02;
     }
     &:nth-child(even) {
-      background-color: $color-skin-color;
+      background-color: $color-yellow;
     }
     &:hover {
-      background-color: $color-dark-blue;
+      border: solid 3px black;
     }
     &__item {
       padding: 15px 15px;

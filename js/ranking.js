@@ -92,7 +92,7 @@ ranking.forEach((score, rank) => {
   );
   rankingCellForLevel.classList.add("p-ranking__row__item--level");
   rankingRow.appendChild(rankingCellForLevel);
-  rankingRow.appendChild(createRankingCell(rankingCellTemplate, score.triedAt));
+  // rankingRow.appendChild(createRankingCell(rankingCellTemplate, score.triedAt));
   rankingBody.appendChild(rankingRow);
 });
 
