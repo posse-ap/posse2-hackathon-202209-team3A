@@ -1,6 +1,7 @@
 @use "../foundation/mixin" as *;
 @use "../foundation/variables" as *;
 
+// todo(takumi) p-main作る
 .l-main {
   padding: 15px;
   background-color: $color-skin-color;
