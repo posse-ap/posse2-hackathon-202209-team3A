@@ -4,3 +4,10 @@ $pc-breakpoint: 520px;
     @content;
   }
 }
+
+$sp-breakpoint: 768px;
+@mixin sp {
+  @media (max-width: $sp-breakpoint) {
+    @content;
+  }
+}
