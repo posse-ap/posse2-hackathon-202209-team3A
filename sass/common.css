@@ -595,6 +595,7 @@ body {
   display: flex;
   margin-top: 20px;
   justify-content: center;
+  align-items: stretch;
 }
 
 .buttons {
@@ -609,7 +610,6 @@ body {
   font-weight: bold;
   font-size: 15px;
   color: #947f74;
-  height: auto;
   display: flex;
   align-items: center;
   padding: 15px;
