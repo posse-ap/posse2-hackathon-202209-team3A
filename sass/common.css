@@ -709,6 +709,61 @@ body {
   transform: translateY(5px);
 }
 
+.p-quiz-modal {
+  max-width: 900px;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(83, 188, 209, 0.7);
+  font-size: 36px;
+}
+.p-quiz-modal__title {
+  padding-top: 30px;
+  padding-left: 40px;
+  color: #ffffff;
+}
+.p-quiz-modal__inner {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 60px;
+}
+.p-quiz-modal__options li {
+  padding: 0 20px;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+.p-quiz-modal__options li:first-child {
+  margin-top: 0;
+}
+.p-quiz-modal__determine {
+  max-width: 300px;
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.p-quiz-modal__determine__text {
+  padding: 20px 25px 0;
+  font-size: 24px;
+}
+.p-quiz-modal__determine__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.p-quiz-modal__determine__buttons__yes {
+  padding: 15px;
+  background-color: #f2acb9;
+}
+.p-quiz-modal__determine__buttons__no {
+  padding: 15px;
+  background-color: #7a93b2;
+}
+
 .l-main {
   padding: 30px;
   background-color: rgba(255, 229, 203, 0.45);
