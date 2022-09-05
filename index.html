@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/common.css" />
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic"
+      rel="stylesheet"
+    />
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>クイズで高める友達レベル</title>
   </head>
   <body>
@@ -16,14 +21,15 @@
             <div class="p-main-visual__container">
               <div class="p-main-visual__container__inner">
                 <h1>クイズで高める<br />友達レベル</h1>
-                <span
-                  >あなたは同期である3.0期生のことを<br />
+                <p>
+                  あなたは同期である3.0期生のことを<br />
                   どれだけ知っているでしょうか？<br />
                   ここでは誰しもが交流の輪を広げることが<br />
                   できる場所です。<br />
                   クイズを通して、きっと素敵な発見や気づき<br />
                   があなたを待っています。
-                </span>
+                </p>
+                <!-- todo(seiya): link -->
                 <a href="">メンバーを見てみる</a>
               </div>
               <div class="p-main-visual__container__slide">
@@ -40,56 +46,7 @@
         <section>
           <div class="p-quiz-scroll">
             <h2>みんなのクイズ</h2>
-            <ul class="p-quiz-scroll__item-list">
-              <li>
-                <img src="./img/icons/icon-seiya.jpg" alt="" />
-                <dl>
-                  <dt>3.0期生 せいや</dt>
-                  <dd>縦もくH 横もくA</dd>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-              <li>
-                <img src="./img/icons/icon-takumi.png" alt="" />
-                <dl>
-                  <dt>3.0期生 たくみ</dt>
-                  <dd>縦もくB 横もくA</dd>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-              <li>
-                <img src="./img/icons/icon-yurie.jpg" alt="" />
-                <dl>
-                  <dt>3.0期生 ゆりえ</dt>
-                  <dd>縦もくC 横もくA</dd>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-              <li>
-                <img src="./img/icons/icon-yuna.jpg" alt="" />
-                <dl>
-                  <dt>3.0期生 ゆうな</dt>
-                  <dd>縦もくI 横もくA</dd>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <dl>
-                  <dt>3.0期生</dt>
-                  <dt>縦もくI 横もくA</dt>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-              <li>
-                <img src="" alt="" />
-                <dl>
-                  <dt>3.0期生</dt>
-                  <dt>縦もくI 横もくA</dt>
-                </dl>
-                <button><p>クイズをやってみる</p></button>
-              </li>
-            </ul>
+            <ul class="p-quiz-scroll__item-list" id="js-profiles"></ul>
             <a class="p-quiz-scroll__button" href="">他のメンバーも見てみる</a>
           </div>
         </section>
@@ -137,6 +94,15 @@
           </div>
         </section>
       </article>
+      <div class="u-hidden">
+        <li id="js-templ-profile">
+          <img alt="" />
+          <dl>
+            <dt></dt>
+          </dl>
+          <button><p>クイズをやってみる</p></button>
+        </li>
+      </div>
     </main>
     <footer>
       <div class="p-footer">
