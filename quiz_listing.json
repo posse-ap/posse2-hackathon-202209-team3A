@@ -5,11 +5,11 @@
       "name": "seiya",
       "children": [
         {
-          "file": "quiz/seiya/beginner.json",
+          "file": "quiz_data/seiya/beginner.json",
           "name": "beginner"
         },
         {
-          "file": "quiz/seiya/intermediate.json",
+          "file": "quiz_data/seiya/intermediate.json",
           "name": "intermediate"
         }
       ]
@@ -18,7 +18,7 @@
       "name": "yurie",
       "children": [
         {
-          "file": "quiz/yurie/beginner.json",
+          "file": "quiz_data/yurie/beginner.json",
           "name": "beginner"
         }
       ]
