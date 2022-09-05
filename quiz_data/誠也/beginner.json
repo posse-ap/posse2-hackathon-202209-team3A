@@ -1,19 +1,16 @@
 [
   {
-    "question": "日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz01.png",
-    "choices": ["約28万人", "約79万人", "約183万人"],
-    "answer": "約79万人"
+    "question": "ハッカソン中どうやってみんなを笑わせた？",
+    "choices": ["変顔", "ブーストに入る宣言", "ダンス"],
+    "answer": "ブーストに入る宣言"
   },
   {
     "question": "既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？",
-    "imgPath": "assets/img/quiz/img-quiz02.png",
     "choices": ["INTECH", "BIZTECH", ""],
     "answer": "XTECH"
   },
   {
     "question": "IoTとは何の略でしょう？",
-    "imgPath": "assets/img/quiz/img-quiz03.png",
     "choices": [
       "Internet of Things",
       "Integrate into Technology",
@@ -23,19 +20,16 @@
   },
   {
     "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz04.png",
     "choices": ["Society 5.0", "CyPhy", "SDGs"],
     "answer": "Society 5.0"
   },
   {
     "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz05.png",
     "choices": ["Web3.0", "NFT", "メタバース"],
     "answer": "Web3.0"
   },
   {
     "question": "先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？",
-    "imgPath": "assets/img/quiz/img-quiz06.png",
     "choices": ["約2倍", "約5倍", "約11倍", "plus option"],
     "answer": "約5倍"
   }
