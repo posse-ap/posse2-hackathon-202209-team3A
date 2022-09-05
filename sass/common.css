@@ -275,6 +275,11 @@ body {
   background-position: center;
   position: relative;
 }
+@media (max-width: 768px) {
+  .p-main-visual {
+    height: auto;
+  }
+}
 .p-main-visual::before {
   content: "";
   background: inherit;
@@ -296,6 +301,12 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .p-main-visual__container {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
 .p-main-visual__container__inner {
   display: flex;
   flex-direction: column;
@@ -308,6 +319,12 @@ body {
   border-radius: 50px 0 50px 0;
   background-color: #53bcd1;
 }
+@media (max-width: 768px) {
+  .p-main-visual__container__inner {
+    height: 360px;
+    gap: 16px;
+  }
+}
 .p-main-visual__container__inner h1 {
   padding-top: 42px;
   color: #ffffff;
@@ -315,11 +332,22 @@ body {
   white-space: nowrap;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  .p-main-visual__container__inner h1 {
+    padding-top: 20px;
+    font-size: 26px;
+  }
+}
 .p-main-visual__container__inner span {
   padding-left: 16px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .p-main-visual__container__inner span {
+    font-size: 12px;
+  }
 }
 .p-main-visual__container__inner a {
   width: 256px;
@@ -336,6 +364,13 @@ body {
   transition-property: background;
   transition-duration: 0.8s;
 }
+@media (max-width: 768px) {
+  .p-main-visual__container__inner a {
+    width: 70%;
+    height: 72px;
+    line-height: 72px;
+  }
+}
 .p-main-visual__container__inner a:hover {
   background-color: #fce8a7;
   color: #53bcd1;
@@ -346,9 +381,15 @@ body {
   z-index: 2;
   position: relative;
 }
+@media (max-width: 768px) {
+  .p-main-visual__container__slide {
+    width: 400px;
+    height: 300px;
+  }
+}
 .p-main-visual__container__slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -423,11 +464,21 @@ body {
   background-color: #ffffff;
   border-left: 10px solid rgba(83, 188, 209, 0.7);
 }
+@media (max-width: 768px) {
+  .p-quiz-scroll h2 {
+    font-size: 24px;
+  }
+}
 .p-quiz-scroll__item-list {
   display: flex;
   gap: 40px;
   padding: 50px 30px 10px;
   overflow-x: scroll;
+}
+@media (max-width: 768px) {
+  .p-quiz-scroll__item-list {
+    padding-top: 30px;
+  }
 }
 .p-quiz-scroll__item-list li {
   flex-shrink: 0;
@@ -436,11 +487,23 @@ body {
   border-radius: 30px;
   background-color: #baebd6;
 }
+@media (max-width: 768px) {
+  .p-quiz-scroll__item-list li {
+    width: 280px;
+    height: 350px;
+  }
+}
 .p-quiz-scroll__item-list img {
   width: 180px;
   height: 180px;
   margin-top: 30px;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .p-quiz-scroll__item-list img {
+    width: 100px;
+    height: 100px;
+  }
 }
 .p-quiz-scroll__item-list dl {
   display: flex;
@@ -451,6 +514,13 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .p-quiz-scroll__item-list dl {
+    font-size: 18px;
+    margin-top: 25px;
+    padding: 0 50px;
+  }
 }
 .p-quiz-scroll__item-list dt {
   font-weight: 400;
@@ -485,6 +555,12 @@ body {
   transition-property: background;
   transition-duration: 0.8s;
 }
+@media (max-width: 768px) {
+  .p-quiz-scroll__button {
+    margin: 16px 0;
+    font-size: 16px;
+  }
+}
 .p-quiz-scroll__button:hover {
   background-color: #53bcd1;
   color: #fce8a7;
@@ -498,24 +574,40 @@ body {
 .p-creators h2 {
   font-size: 42px;
 }
+@media (max-width: 768px) {
+  .p-creators h2 {
+    font-size: 24px;
+  }
+}
 .p-creators__item-list {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
 }
+@media (max-width: 768px) {
+  .p-creators__item-list {
+    flex-wrap: wrap;
+  }
+}
 .p-creators__item-list li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   width: 270px;
   transition-duration: 1.2s;
 }
 .p-creators__item-list li:hover {
   transform: scale(1.1);
 }
+@media (max-width: 768px) {
+  .p-creators__item-list li {
+    padding: 15px 10px;
+  }
+}
 .p-creators__item-list img {
   width: 100%;
-  height: 400px;
+  height: auto;
   border-radius: 100px;
 }
 .p-creators__item-list dl {
@@ -529,6 +621,11 @@ body {
   padding: 0 20px;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  .p-creators__item-list dd {
+    margin-top: 16px;
+  }
+}
 
 .p-footer {
   height: 100px;
@@ -536,6 +633,12 @@ body {
   text-align: center;
   background-color: #baebd6;
   font-size: 24px;
+}
+@media (max-width: 768px) {
+  .p-footer {
+    height: 80px;
+    line-height: 80px;
+  }
 }
 
 .l-main {
