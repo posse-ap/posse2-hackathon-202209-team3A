@@ -700,6 +700,9 @@ body {
   justify-content: center;
   align-items: stretch;
 }
+.quiz-selection:hover > .selection-list {
+  background-color: #ffdcc9;
+}
 
 .buttons {
   line-height: 10px;
@@ -718,10 +721,6 @@ body {
   padding: 15px;
 }
 
-.selections {
-  line-height: 10px;
-}
-
 .selection-list {
   background-color: #d9d9d9;
   margin-top: 10px;
@@ -734,6 +733,7 @@ body {
   color: #947f74;
   padding: 15px;
   width: 200px;
+  transition: 0.2s ease 0s;
 }
 
 .li {
