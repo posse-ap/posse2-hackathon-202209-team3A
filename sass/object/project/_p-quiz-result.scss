@@ -1,4 +1,5 @@
 @use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
 
 .p-quiz-result {
   display: flex;
@@ -20,6 +21,9 @@
   }
 
   &__text {
-    font-size: 34px;
+    font-size: 24px;
+    @include pc {
+      font-size: 34px;
+    }
   }
 }

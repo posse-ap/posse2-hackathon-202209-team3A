@@ -1066,7 +1066,12 @@ body {
   background-color: #ffffff;
 }
 .p-quiz-result__text {
-  font-size: 34px;
+  font-size: 24px;
+}
+@media (min-width: 520px) {
+  .p-quiz-result__text {
+    font-size: 34px;
+  }
 }
 
 .p-invite {
@@ -1103,8 +1108,14 @@ body {
 .p-invite__username {
   font-size: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+@media (min-width: 520px) {
+  .p-invite__username {
+    flex-direction: row;
+  }
 }
 .p-invite__input {
   padding: 5px;
