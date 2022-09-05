@@ -1,0 +1,57 @@
+[
+  {
+    "question": "朝ご飯に食べるならどれ？",
+    "choices": ["寝ていて食べられない", "お米", "パン"],
+    "answer": ""
+  },
+  {
+    "question": "好きなゲームは？",
+    "choices": ["ツムツム", "パズドラ", "マリオカート"],
+    "answer": "マリオカート"
+  },
+  {
+    "question": "誰のLIVEに行きたい？",
+    "choices": ["BTS","TWICE","BLACKPINK"],
+    "answer": "BLACKPINK"
+  },
+  {
+    "question": "愛犬の名前は？",
+    "choices": ["コタロウ", "ハチ", "マロン"],
+    "answer": "ハチ"
+  },
+  {
+    "question": "好きな外食は？",
+    "choices": ["焼肉", "イタリアン", "フレンチ"],
+    "answer": ""
+  },
+  {
+    "question": "9月の目標は？",
+    "choices": ["アルバイト", "早寝早起き", "自炊"],
+    "answer": "自炊"
+  }
+   {
+    "question": "高校の間遅刻したことがない理由は？",
+    "choices": ["部活の朝練", "自転車を漕ぐのが速かった", "遅延証明の濫用"],
+    "answer": "自転車を漕ぐのが速かった"
+  }
+   {
+    "question": "好きなSNSは？",
+    "choices": ["Twitter", "Instagram", "LINE"],
+    "answer": "Twitter"
+  }
+   {
+    "question": "好きな回転寿司チェーンは？",
+    "choices": ["スシロー", "くら寿司", "かっぱ寿司"],
+    "answer": "くら寿司"
+  }
+   {
+    "question": "HarborS近くで行きたいご飯屋さんは？",
+    "choices": ["サブウェイ", "はせ川", "モンスーンカフェ"],
+    "answer": "モンスーンカフェ"
+  }
+   {
+    "question": "好きなサンリオキャラは？",
+    "choices": ["ポムポムプリン", "クロミ", "マイメロディ"],
+    "answer": "クロミ"
+  }
+]
