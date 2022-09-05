@@ -2,8 +2,15 @@
 @use "foundation/reset";
 @use "foundation/base";
 
+// layout
+@use "layout/l-main";
+
 // other
 @use "others/quiz";
 
 // project
 @use "object/project/p-back-top";
+@use "object/project/p-ranking";
+
+// utility
+@use "object/utility/u-display";
