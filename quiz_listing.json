@@ -2,15 +2,6 @@
   "name": "root",
   "children": [
     {
-      "name": "たくみ",
-      "children": [
-        {
-          "file": "quiz_data/たくみ/beginner.json",
-          "name": "beginner"
-        }
-      ]
-    },
-    {
       "name": "ゆうな",
       "children": [
         {
@@ -24,6 +15,15 @@
       "children": [
         {
           "file": "quiz_data/ゆりえ/beginner.json",
+          "name": "beginner"
+        }
+      ]
+    },
+    {
+      "name": "たくみ",
+      "children": [
+        {
+          "file": "quiz_data/たくみ/beginner.json",
           "name": "beginner"
         }
       ]
