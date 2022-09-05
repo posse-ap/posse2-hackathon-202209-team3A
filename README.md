@@ -25,3 +25,20 @@ git branch [branch-name]
 ```sh
 git checkout [branch=-name]
 ```
+
+### PRあげたい
+
+1. stagingに追加
+```sh
+git add -A
+```
+
+2. コミットする
+```sh
+git commmit -m [commit-message]
+```
+
+3. リモートに送る
+```sh
+git push origin [branch-name]
+```
