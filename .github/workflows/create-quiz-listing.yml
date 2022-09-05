@@ -17,15 +17,15 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: |
-            update listing.json
+            update quiz_listing.json
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: branch-name
+          branch: feat/quiz_listing
           base: main
           delete-branch: true
           title: |
-            update listing.json
+            update quiz_listing.json
           body:
           assignees: tacomeet
           draft: false
