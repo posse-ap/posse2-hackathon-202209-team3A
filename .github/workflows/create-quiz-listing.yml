@@ -32,4 +32,5 @@ jobs:
       - name: merge PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr merge ${{ steps.cpr.outputs.pull-request-url }} --merge
+        if: steps.cpr.outputs.pull-request-url != ''
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-url }} --merge --delete-branch
