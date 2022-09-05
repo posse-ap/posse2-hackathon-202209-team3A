@@ -1,4 +1,5 @@
 @use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
 
 .p-quiz-scroll {
   margin-top: 40px;
@@ -13,6 +14,10 @@
     padding: 0 20px;
     background-color: $color-white;
     border-left: 10px solid $color-light-blue;
+
+    @include sp {
+      font-size: 24px;
+    }
   }
 
   &__item-list {
@@ -21,12 +26,21 @@
     padding: 50px 30px 10px;
     overflow-x: scroll;
 
+    @include sp {
+      padding-top: 30px;
+    }
+
     & li {
       flex-shrink: 0;
       width: 370px;
       height: 470px;
       border-radius: 30px;
       background-color: $color-light-green;
+
+      @include sp {
+        width: 280px;
+        height: 350px;
+      }
     }
 
     & img {
@@ -34,6 +48,11 @@
       height: 180px;
       margin-top: 30px;
       border-radius: 50%;
+
+      @include sp {
+        width: 100px;
+        height: 100px;
+      }
     }
 
     & dl {
@@ -45,6 +64,12 @@
       font-size: 24px;
       font-weight: 400;
       line-height: 1.5;
+
+      @include sp {
+        font-size: 18px;
+        margin-top: 25px;
+        padding: 0 50px;
+      }
     }
 
     & dt {
@@ -84,6 +109,11 @@
     color: $color-light-blue02;
     transition-property: background;
     transition-duration: 0.8s;
+
+    @include sp {
+      margin: 16px 0;
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: $color-light-blue02;
