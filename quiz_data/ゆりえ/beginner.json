@@ -1,40 +1,32 @@
 [
   {
-    "question": "日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？",
-    "choices": [
-      "日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？",
-      "約79万人",
-      "約183万人"
-    ],
-    "answer": "約79万人"
+    "question": "兄弟はいる？",
+    "choices": ["弟","いない","兄"],
+    "answer": "弟"
   },
   {
-    "question": "既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？",
-    "choices": ["INTECH", "BIZTECH", "XTECH"],
-    "answer": "XTECH"
+    "question": "出身は？",
+    "choices": ["埼玉県", "岡山県", "山梨県"],
+    "answer": "岡山県"
   },
   {
-    "question": "IoTとは何の略でしょう？",
-    "choices": [
-      "Internet of Things",
-      "Integrate into Technology",
-      "Information on Tool"
-    ],
-    "answer": "Internet of Things"
+    "question": "誕生日は？",
+    "choices": ["11/6","12/12","2/13"],
+    "answer": "11/6"
   },
   {
-    "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "choices": ["Society 5.0", "CyPhy", "SDGs"],
-    "answer": "Society 5.0"
+    "question": "中学の時の部活は？",
+    "choices": ["吹奏楽部", "ソフトテニス部", "陸上部"],
+    "answer": "陸上部"
   },
   {
-    "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "choices": ["Web3.0", "NFT", "メタバース"],
-    "answer": "Web3.0"
+    "question": "ブラシスは誰？",
+    "choices": ["かれんさん", "おのかんさん", "こうへいさん"],
+    "answer": "おのかんさん"
   },
   {
-    "question": "先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？",
-    "choices": ["約2倍", "約5倍", "約11倍"],
-    "answer": "約5倍"
+    "question": "macの色は？",
+    "choices": ["シルバー", "スペースグレイ", "ピンクゴールド"],
+    "answer": "ピンクゴールド"
   }
 ]
