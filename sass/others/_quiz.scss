@@ -1,6 +1,14 @@
 @use "../foundation/variables" as *;
 
 
+body{
+background-color: $color-skin-color;
+}
+
+.quiz-main {
+  padding: 30px; //seiya paddingをこちらへあてました
+}
+
 .quiz-box{
 display: flex;
 justify-content: center;
