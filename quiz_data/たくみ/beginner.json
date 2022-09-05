@@ -5,10 +5,9 @@
     "answer": "3人"
   },
   {
-    "question": "既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？",
-    "imgPath": "assets/img/quiz/img-quiz02.png",
-    "choices": ["INTECH", "BIZTECH", ""],
-    "answer": "XTECH"
+    "question": "趣味は料理？",
+    "choices": ["はい", "", ""],
+    "answer": "はい"
   },
   {
     "question": "IoTとは何の略でしょう？",
