@@ -1,5 +1,7 @@
 @use "../foundation/variables" as *;
 
 body {
+  letter-spacing: 1.5px;
+  line-height: 1.75;
   background-color: $color-skin-color;
 }

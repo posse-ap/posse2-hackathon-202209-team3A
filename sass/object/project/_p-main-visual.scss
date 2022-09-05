@@ -2,15 +2,31 @@
 
 .p-main-visual {
   height: 766px;
-  background-color: #fff;
+  background-image: url(../../../img/bg-mainvisual01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    background: inherit;
+    filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
 
   &__container {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding-top: 100px;
+    position: relative;
+    overflow: hidden;
 
     &__inner {
       display: flex;
@@ -20,12 +36,13 @@
 
       & h1 {
         font-size: 64px;
-        white-space: nowrap; 
+        white-space: nowrap;
       }
 
       & span {
+        color: $color-white;
         font-size: 16px;
-        line-height: 1.5;
+        font-weight: 500;
       }
 
       & a {
@@ -44,9 +61,75 @@
     }
 
     &__slide {
-      width: 650px;
-      height: 770px;
-      background-color: pink; //仮
+      width: 600px;
+      height: 720px;
+      // background-color: pink; //仮
+      z-index: 2;
+      position: relative;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        opacity: 0;
+        animation: slideshow 40s linear infinite;
+
+        &:nth-child(2) {
+          animation-delay: 8s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 16s;
+        }
+
+        &:nth-child(4) {
+          animation-delay: 24s;
+        }
+
+        &:last-child {
+          animation-delay: 32s;
+        }
+      }
+
+      @keyframes slideshow {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        15% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    &__moving {
+      font-size: 80px;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      white-space: nowrap;
+      animation: scrollSample01 36s linear infinite;
+    }
+
+    @keyframes scrollSample01 {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
     }
   }
 }

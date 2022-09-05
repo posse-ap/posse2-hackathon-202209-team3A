@@ -1,0 +1,13 @@
+@use "../../foundation/variables" as *;
+
+// todo: クリックした時に上下するアニメーションつけたい
+.p-back-top {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: $color-gray;
+  color: black;
+  box-shadow: 2px 2px 2px black;
+}

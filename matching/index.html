@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../sass/common.css" />
+    <script src="../js/utils.js" defer></script>
+    <script src="../js/match.js" defer></script>
+    <title>Quizで高めるゆりえレベル</title>
+  </head>
+  <body>
+    <main>
+      <button class="p-back-top">トップページに戻る</button>
+      <div id="js-checkboxContainer">
+        <label id="js-tmplCheckbox" class="js-wrapper hidden"
+          ><input type="checkbox" checked /><span class="js-text"></span
+        ></label>
+      </div>
+      <button id="js-submit">グループ分割</button>
+      <div id="js-result" class="group__result">
+        <span></span>
+      </div>
+      <div id="js-message" class="hidden">
+        <span>送信用メッセージ</span>
+        <p class="js-text"></p>
+        <button>クリックしてコピー</button>
+      </div>
+    </main>
+  </body>
+</html>
