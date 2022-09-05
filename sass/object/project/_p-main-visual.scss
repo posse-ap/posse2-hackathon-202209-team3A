@@ -1,0 +1,52 @@
+@use "../../foundation/variables" as *;
+
+.p-main-visual {
+  height: 766px;
+  background-color: #fff;
+
+  &__container {
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 20px;
+
+      & h1 {
+        font-size: 64px;
+        white-space: nowrap; 
+      }
+
+      & span {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      & a {
+        width: 256px;
+        height: 106px;
+        margin: 20px auto 0;
+        text-align: center;
+        line-height: 106px;
+        background-color: $color-yellow;
+        font-size: 24px;
+        border-radius: 40px;
+
+        // &:hover {
+        // }
+      }
+    }
+
+    &__slide {
+      width: 650px;
+      height: 770px;
+      background-color: pink; //仮
+    }
+  }
+}
