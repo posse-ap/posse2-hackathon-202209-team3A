@@ -18,6 +18,12 @@
 例 `ゆうな.jpg` 
 注意: 現状、 `.png` はもちろんのこと、`.jpeg` など拡張子の記述が違うだけで表示されなくなる。
 
+     📎https://www.iloveimg.com/ja/convert-to-jpg/png-to-jpg (.png→.jpg)
+     
+     📎https://convertio.co/ja/jpeg-jpg/ (.jpeg→.jpg) 
+    
+     などを用いて修正することができる。
+
 
 ## JSONファイルのフォーマット
 
