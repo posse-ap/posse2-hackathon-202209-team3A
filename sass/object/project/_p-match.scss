@@ -1,0 +1,68 @@
+@use "../../foundation/variables" as *;
+
+.p-match {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 30px;
+
+  font-size: 16px;
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  &__button {
+    // todo(takumi) animation
+    color: $color-white;
+    background-color: $color-dark-blue;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      border-radius: 15px;
+      background-color: $color-pink;
+      padding: 10px;
+      box-shadow: 2px 2px 2px black;
+
+      line-height: 2;
+    }
+    &__button {
+      color: $color-white;
+      background-color: $color-dark-blue;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 40px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  }
+}

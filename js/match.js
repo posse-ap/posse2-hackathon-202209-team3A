@@ -2,6 +2,17 @@
 
 const memberPath = "../member.json";
 
+const messageText = `
+みんなー！！カルチャのなおきです💗
+今週もゆりえレベルをあげようの会を開催します🐣
+MUの前後の時間などを使って、zoomを繋いでクイズをしてみてね！
+以下今週のペアです！！何かあればこちゃにお願いします！！
+
+$
+
+クイズに答えたらこのグループに挑戦状を送ってねー！！
+`;
+
 (async () => {
   return await (await fetch(memberPath)).json();
 })().then((members) => {
@@ -28,6 +39,7 @@ const setupCheckbox = (members) => {
 
 const handleMatchButton = (members) => {
   const shuffledMembers = shuffleArray(members);
+  console.log(shuffledMembers);
 
   const checkboxContainer = document.getElementById("js-checkboxContainer");
   const checkboxWrappers = Array.from(
@@ -38,26 +50,34 @@ const handleMatchButton = (members) => {
     .filter((wrapper) => wrapper.querySelector("input").checked)
     .map((wrapper) => wrapper.querySelector(".js-text").textContent);
 
-  const match = findMatches(shuffledMembers, selectedNames);
+  const shuffledSelectedNames = shuffleArray(selectedNames);
+
+  const match = findMatches(shuffledMembers, shuffledSelectedNames);
   if (match) {
     const result = document.getElementById("js-result");
-    result.innerHTML = "";
+    result.classList.remove("u-hidden");
+    const resultContainer = document.getElementById("js-resultContainer");
+    resultContainer.innerHTML = "";
+    const teamText = [];
     match.forEach((names, i) => {
       const team = document.createElement("span");
-      const teamName = names.join(", ");
+      const teamName = names.join("   ");
       team.textContent = `チーム${i + 1} : ${teamName}`;
-      result.append(team);
+      resultContainer.append(team);
+      teamText.push(`チーム${i + 1} : ${teamName}`);
     });
 
-    const message = document.getElementById("js-message");
-    message.classList.remove("u-hidden");
-    const messageText = "今週のクイズチームはこちらです！チーム1: ...";
-    message.querySelector(".js-text").textContent = messageText;
-    const button = message.querySelector("button");
-    button.addEventListener("click", () => {
-      navigator.clipboard.writeText(messageText);
-      button.textContent = "コピー完了！";
-      setTimeout(() => (button.innerHTML = "クリックしてコピー"), 1000);
+    const messageButton = document.getElementById("js-messageButton");
+    messageButton.addEventListener("click", () => {
+      navigator.clipboard.writeText(
+        messageText.replace("$", teamText.join("\n"))
+      );
+      messageButton.textContent = "コピー完了！";
+      setTimeout(
+        () =>
+          (messageButton.textContent = "送信用メッセージをクリックしてコピー"),
+        1000
+      );
     });
   } else {
     alert("マッチングできませんでした");
@@ -70,7 +90,6 @@ const findMatches = (members, selectedNames) => {
   const leftMemberIds = new Set(
     selectedNames.map((name) => memberIdByName.get(name))
   );
-  console.log(leftMemberIds);
 
   const match = [];
 

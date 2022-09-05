@@ -12,19 +12,26 @@
   <body>
     <main>
       <button class="p-back-top">トップページに戻る</button>
-      <div id="js-checkboxContainer">
-        <label id="js-tmplCheckbox" class="js-wrapper hidden"
-          ><input type="checkbox" checked /><span class="js-text"></span
-        ></label>
-      </div>
-      <button id="js-submit">グループ分割</button>
-      <div id="js-result" class="group__result">
-        <span></span>
-      </div>
-      <div id="js-message" class="hidden">
-        <span>送信用メッセージ</span>
-        <p class="js-text"></p>
-        <button>クリックしてコピー</button>
+      <div class="p-match">
+        <div id="js-checkboxContainer" class="p-match__checkbox">
+          <label
+            id="js-tmplCheckbox"
+            class="js-wrapper hidden p-match__checkbox__item"
+            ><input type="checkbox" checked /><span class="js-text"></span
+          ></label>
+        </div>
+        <button id="js-submit" class="p-match__button">
+          グループ分けをする
+        </button>
+        <div id="js-result" class="p-match__result u-hidden">
+          <span class="p-match__result__title"
+            >今週のクイズチームはこちらです！</span
+          >
+          <div id="js-resultContainer" class="p-match__result__container"></div>
+          <button id="js-messageButton" class="p-match__result__button">
+            送信用メッセージをクリックしてコピー
+          </button>
+        </div>
       </div>
     </main>
   </body>
