@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const quizDir = "./quiz";
+const quizDir = "./quiz_data";
 
 const walk = (p, callback) => {
   const results = [];
