@@ -1,0 +1,6 @@
+$pc-breakpoint: 520px;
+@mixin pc {
+  @media (min-width: $pc-breakpoint) {
+    @content;
+  }
+}

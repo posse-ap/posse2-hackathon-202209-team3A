@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 
   &::before {
     content: "";
@@ -20,50 +21,68 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 40px;
     position: relative;
     overflow: hidden;
 
     &__inner {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 40px;
+      max-width: 500px;
+      width: 100%;
+      height: 650px;
       margin-top: 20px;
+      border-radius: 50px 0  50px 0;
+      background-color: $color-light-blue02;
 
       & h1 {
-        font-size: 64px;
+        padding-top: 42px;
+        color: $color-white;
+        font-size: 48px;
         white-space: nowrap;
+        line-height: 1.4;
       }
 
       & span {
+        padding-left: 16px;
         color: $color-white;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
       }
 
       & a {
         width: 256px;
-        height: 106px;
-        margin: 20px auto 0;
+        height: 80px;
+        margin: 0 auto;
         text-align: center;
-        line-height: 106px;
-        background-color: $color-yellow;
-        font-size: 24px;
+        line-height: 80px;
+        border: 3px solid $color-yellow;
         border-radius: 40px;
+        color: $color-yellow;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: 600;
+        transition-property: background;
+        transition-duration: .8s;
 
-        // &:hover {
-        // }
+        &:hover {
+          background-color: $color-yellow;
+          color: $color-light-blue02;
+        }
       }
     }
 
     &__slide {
-      width: 600px;
-      height: 720px;
-      // background-color: pink; //仮
+      width: 700px;
+      height: 500px;
+      // margin-left: 125px;
       z-index: 2;
       position: relative;
 
@@ -114,22 +133,24 @@
       }
     }
 
-    &__moving {
-      font-size: 80px;
-      position: absolute;
-      bottom: 0;
-      z-index: 1;
-      white-space: nowrap;
-      animation: scrollSample01 36s linear infinite;
-    }
+    // &__moving {
+    //   font-size: 80px;
+    //   color:$color-yellow;
+    //   position: absolute;
+    //   bottom: -30px;
+    //   z-index: 1;
+    //   line-height: 1;
+    //   white-space: nowrap;
+    //   animation: scrollSample01 36s linear infinite;
+    // }
 
-    @keyframes scrollSample01 {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(100%);
-      }
-    }
+    // @keyframes scrollSample01 {
+    //   0% {
+    //     transform: translateX(-100%);
+    //   }
+    //   100% {
+    //     transform: translateX(100%);
+    //   }
+    // }
   }
 }
