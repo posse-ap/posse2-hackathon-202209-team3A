@@ -1,0 +1,42 @@
+@use "../../foundation/variables" as *;
+
+.p-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 80vh;
+  padding: 30px;
+  background-color: $color-light-blue;
+  border-radius: 30px;
+
+  &__title {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: $color-white;
+  }
+
+  &__text {
+    font-size: 34px;
+  }
+
+  &__button {
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    background-color: $color-white;
+    transition: 0.3s ease 0s;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    &:hover {
+      color: $color-white;
+      background-color: black;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 "use strict";
 
-const DOMAIN = "https://posse-ap.github.io/posse2-hackathon-202209-team3A/";
-const CHALLENGE_PAGE_PATH = "/challenge";
+const DOMAIN = "https://posse-ap.github.io/posse2-hackathon-202209-team3A";
+const CHALLENGE_PAGE_PATH = "quiz/challenge";
 
 const url = new URL(window.location.href);
 
@@ -20,14 +20,14 @@ result.textContent = `あなたの${personName}レベルは${level}です！`;
 const button = document.getElementById("js-challengeUrl");
 button.addEventListener("click", () => {
   const userName = document.getElementById("js-userName").value;
-  const challengeUrl = createChallengeUrl(score, quizName, userName);
+  const challengeUrl = createChallengeUrl(level, personName, quizName, userName);
   navigator.clipboard.writeText(challengeUrl);
   button.textContent = "コピー完了！";
   setTimeout(() => (button.innerHTML = "リンクをコピー"), 1000);
 });
 
-const createChallengeUrl = (score, quizName, userName) => {
+const createChallengeUrl = (level, personName, quizName, userName) => {
   // todo(takumi) encoding
   // btoa(encodeURIComponent(text));
-  return `${DOMAIN}/${CHALLENGE_PAGE_PATH}?score=${score}&quiz_name=${quizName}&inviter_name=${userName}`;
+  return `${DOMAIN}/${CHALLENGE_PAGE_PATH}/index.html?person_name=${personName}&quiz_name=${quizName}&inviter_name=${userName}&level=${level}`;
 };
