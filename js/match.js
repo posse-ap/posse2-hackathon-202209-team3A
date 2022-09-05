@@ -19,7 +19,7 @@ const setupCheckbox = (members) => {
     const checkbox = checkboxTemplate.cloneNode(true);
     checkbox.querySelector(".js-text").textContent = name;
     checkbox.id = "";
-    checkbox.classList.remove("hidden");
+    checkbox.classList.remove("u-hidden");
     checkboxContainer.appendChild(checkbox);
   });
 
@@ -50,7 +50,7 @@ const handleMatchButton = (members) => {
     });
 
     const message = document.getElementById("js-message");
-    message.classList.remove("hidden");
+    message.classList.remove("u-hidden");
     const messageText = "今週のクイズチームはこちらです！チーム1: ...";
     message.querySelector(".js-text").textContent = messageText;
     const button = message.querySelector("button");

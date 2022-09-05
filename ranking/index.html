@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../sass/common.css" />
+    <script src="../js/utils.js" defer></script>
+    <script src="../js/ranking.js" defer></script>
+    <title>Quizで高めるゆりえレベル</title>
+  </head>
+  <body>
+    <main class="l-main">
+      <div class="u-center-column">
+        <button class="p-back-top">トップページに戻る</button>
+        <table id="js-ranking" class="p-ranking">
+          <thead>
+            <tr class="p-ranking__header">
+              <th class="p-ranking__header__item">Rank</th>
+              <th class="p-ranking__header__item p-ranking__header__item--name">
+                Name
+              </th>
+              <th class="p-ranking__header__item p-ranking__header__item--quiz">
+                Quiz
+              </th>
+              <th class="p-ranking__header__item">Level</th>
+              <th class="p-ranking__header__item">Tried At</th>
+            </tr>
+          </thead>
+          <tbody id="js-rankingBody" class="p-ranking__body">
+            <tr id="js-templ-rankingRow" class="p-ranking__row">
+              <td id="js-templ-rankingCell" class="p-ranking__row__item"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
