@@ -36,6 +36,9 @@ const setupQuiz = (quizzes, index) => {
   const question = document.getElementById("js-question");
   question.textContent = quizzes[index].question;
 
+  const quizWrapper = document.getElementById("js-quizWrapper");
+  const oImg = document.getElementById("js-oImg");
+  const xImg = document.getElementById("js-xImg");
   const choices = document.getElementById("js-choices");
   const choiceTemplate = document.getElementById("js-templ-choice");
   choices.innerHTML = "";
@@ -47,17 +50,41 @@ const setupQuiz = (quizzes, index) => {
     choice.querySelector(".js-id").textContent = id;
     choice.querySelector(".js-text").textContent = choiceData;
     choices.append(choice);
-
+  });
+  Array.from(choices.querySelectorAll("button")).forEach((choice) => {
     choice.addEventListener("click", () => {
-      if (quizzes[index].answer === choiceData) {
+      if (
+        quizzes[index].answer === choice.querySelector(".js-text").textContent
+      ) {
         score++;
-      }
-      if (index + 1 < quizzes.length) {
-        setupQuiz(quizzes, index + 1);
+        quizWrapper.append(oImg);
+        oImg.classList.remove("u-hidden");
       } else {
-        finishQuiz(quizzes, score);
+        quizWrapper.append(xImg);
+        xImg.classList.remove("u-hidden");
       }
+      Array.from(choices.querySelectorAll("button")).forEach((b) => {
+        const text = b.querySelector(".js-text");
+        // b.classList.add("stop-effect");
+        b.disabled = true;
+        console.log(text.textContent)
+        if (quizzes[index].answer === text.textContent) {
+          text.classList.add("correct-choice");
+        } else {
+          text.classList.add("wrong-choice");
+        }
+      });
     });
+  });
+  const next = document.getElementById("js-next");
+  next.addEventListener("click", () => {
+    oImg.classList.add("u-hidden");
+    xImg.classList.add("u-hidden");
+    if (index + 1 < quizzes.length) {
+      setupQuiz(quizzes, index + 1);
+    } else {
+      finishQuiz(quizzes, score);
+    }
   });
 };
 

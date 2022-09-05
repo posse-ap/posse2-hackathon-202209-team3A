@@ -18,7 +18,7 @@
     <!-- 残問数カウンターはよくわからないので端折ります -->
     <!-- 問題文 -->
     <main class="quiz-main">
-      <section class="quiz-box">
+      <section class="quiz-box" id="js-quizWrapper">
         <div class="quiz-container">
           <span id="js-number" class="q-number"></span>
           <p id="js-question" class="q-passage"></p>
@@ -33,9 +33,21 @@
           </button>
         </div>
       </section>
-      <section class="bottom-quiz">
+      <section class="bottom-quiz" id="js-next">
         <div class="next-page">次へor結果を見る</div>
       </section>
+      <img
+        src="../img/icon/o.png"
+        alt=""
+        class="u-hidden quiz-img"
+        id="js-oImg"
+      />
+      <img
+        src="../img/icon/x.png"
+        alt=""
+        class="u-hidden quiz-img"
+        id="js-xImg"
+      />
     </main>
   </body>
 </html>
