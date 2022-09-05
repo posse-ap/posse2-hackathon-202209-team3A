@@ -1,0 +1,48 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-ranking {
+  border-collapse: collapse;
+  border-spacing: 0;
+  // width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+
+  &__header {
+    border-bottom: solid 1px $color-gray;
+    background-color: $color-light-blue;
+    cursor: pointer;
+
+    &__item {
+      text-align: center;
+      padding: 15px 15px;
+    }
+  }
+
+  &__row {
+    &:nth-child(odd) {
+      background-color: $color-light-blue;
+    }
+    &:nth-child(even) {
+      background-color: $color-skin-color;
+    }
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+    &__item {
+      padding: 15px 15px;
+      line-height: 28px;
+      &--rank {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      &--level {
+        font-size: 28px;
+        font-weight: 700;
+        color: gray;
+      }
+    }
+  }
+}

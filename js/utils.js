@@ -16,3 +16,11 @@ const popFromSet = (set) => {
     return item;
   }
 };
+
+const getCurrentDate = () => {
+  const d = new Date();
+  const formatted = `
+  ${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}
+`.replace(/\n|\r/g, "");
+  return formatted;
+};
