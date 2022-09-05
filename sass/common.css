@@ -961,6 +961,8 @@ body {
   box-shadow: 2px 2px 2px black;
   background-color: #ffffff;
   transition: 0.3s ease 0s;
+  display: flex;
+  align-items: center;
 }
 .p-invite__button:hover {
   color: #ffffff;
