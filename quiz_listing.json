@@ -5,8 +5,8 @@
       "name": "たくみ",
       "children": [
         {
-          "file": "quiz_data/たくみ/beginner.json",
-          "name": "beginner"
+          "file": "quiz_data/たくみ/初級.json",
+          "name": "初級"
         }
       ]
     },
@@ -40,12 +40,12 @@
       "name": "誠也",
       "children": [
         {
-          "file": "quiz_data/誠也/beginner.json",
-          "name": "beginner"
+          "file": "quiz_data/誠也/中級.json",
+          "name": "中級"
         },
         {
-          "file": "quiz_data/誠也/intermediate.json",
-          "name": "intermediate"
+          "file": "quiz_data/誠也/初級.json",
+          "name": "初級"
         }
       ]
     }
