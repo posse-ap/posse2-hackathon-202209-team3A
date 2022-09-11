@@ -14,15 +14,6 @@
       "name": "ゆうな",
       "children": [
         {
-          "file": "quiz_data/ゆうな/beginner.json",
-          "name": "beginner"
-        }
-      ]
-    },
-    {
-      "name": "ゆりえ",
-      "children": [
-        {
           "file": "quiz_data/ゆりえ/ほぼゆりえ",
           "name": "ほぼゆりえ"
         },
@@ -32,6 +23,19 @@
         },
         {
           "file": "quiz_data/ゆりえ/初級",
+          "name": "初級"
+        }
+      ]
+    },
+    {
+      "name": "誠也",
+      "children": [
+        {
+          "file": "quiz_data/誠也/中級.json",
+          "name": "中級"
+        },
+        {
+          "file": "quiz_data/誠也/初級.json",
           "name": "初級"
         }
       ]
