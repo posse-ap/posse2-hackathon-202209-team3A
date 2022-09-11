@@ -4,6 +4,7 @@
 .p-main-visual {
   height: 766px;
   background-image: url("../../../img/bg-mainvisual01.jpg");
+  background-image: url("#{$path-img}/bg-mainvisual01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,7 +40,6 @@
       flex-direction: column;
       padding-top: 0;
     }
-  
 
     &__inner {
       display: flex;
@@ -50,7 +50,7 @@
       width: 100%;
       height: 650px;
       margin-top: 20px;
-      border-radius: 50px 0  50px 0;
+      border-radius: 50px 0 50px 0;
       background-color: $color-light-blue02;
 
       @include sp {
@@ -95,7 +95,7 @@
         font-size: 18px;
         font-weight: 600;
         transition-property: background;
-        transition-duration: .8s;
+        transition-duration: 0.8s;
 
         @include sp {
           width: 70%;

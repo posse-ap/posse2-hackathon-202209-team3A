@@ -317,6 +317,7 @@ body {
 .p-main-visual {
   height: 766px;
   background-image: url("../../../img/bg-mainvisual01.jpg");
+  background-image: url("../img/bg-mainvisual01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
