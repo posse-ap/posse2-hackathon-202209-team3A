@@ -67,7 +67,7 @@ const setupQuiz = (quizzes, index) => {
         const text = b.querySelector(".js-text");
         // b.classList.add("stop-effect");
         b.disabled = true;
-        console.log(text.textContent)
+        console.log(text.textContent);
         if (quizzes[index].answer === text.textContent) {
           text.classList.add("correct-choice");
         } else {
@@ -77,6 +77,8 @@ const setupQuiz = (quizzes, index) => {
     });
   });
   const next = document.getElementById("js-next");
+  const isLast = index === quizzes.length - 1;
+  next.textContent = isLast ? "結果を見る" : "次へ";
   next.addEventListener("click", () => {
     oImg.classList.add("u-hidden");
     xImg.classList.add("u-hidden");

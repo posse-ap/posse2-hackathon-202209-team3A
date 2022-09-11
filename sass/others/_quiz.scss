@@ -7,6 +7,9 @@ body {
 
 .quiz-main {
   padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .quiz-box {
@@ -82,20 +85,15 @@ body {
 .li {
   list-style-type: none;
 }
-.bottom-quiz {
-  display: flex;
-  color: #947f74;
-  margin-top: 30px;
-  justify-content: center;
-}
 .next-page {
   background-color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   padding: 15px;
   border-radius: 15px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  width: 150px;
+  margin: 20px;
+  text-align: center;
 }
 .bottom-img {
   width: 150px;
@@ -105,12 +103,12 @@ body {
   position: absolute;
   display: block;
   width: 20%;
-  top: 50%;
+  top: 150px;
   left: 50%;
-  transform: translate(-50%, -50%);
-
+  transform: translate(-50%, 0);
+  
   @include pc {
-    width: 10%;
+    width: 5%;
   }
 }
 

@@ -15,7 +15,7 @@ if (!level || !personName || !quizName) {
 }
 
 const result = document.getElementById("js-result");
-result.textContent = `あなたの${personName}レベルは${level}です！`;
+result.textContent = `あなたの${personName}レベルは${level}%です！`;
 
 const button = document.getElementById("js-challengeUrl");
 button.addEventListener("click", () => {
