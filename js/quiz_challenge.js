@@ -13,12 +13,12 @@ if (!level || !personName || !quizName) {
 
 const title = document.getElementById("js-text");
 title.textContent = inviterName
-  ? `${inviterName}から挑戦状が来ました！！`
-  : "挑戦状が来ました！！";
+  ? `${personName}レベルが${level}%の${inviterName}から挑戦状が来ました！！`
+  : `${personName}のクイズの挑戦状が来ました！！`;
 
 const button = document.getElementById("js-button");
 button.addEventListener("click", () => {
   window.location.assign(
     `../index.html?person_name=${personName}&quiz_name=${quizName}`
   );
-})
+});
