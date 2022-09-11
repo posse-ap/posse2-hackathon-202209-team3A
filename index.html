@@ -18,8 +18,12 @@
       <div class="p-header">
         <nav>
           <ul>
-            <li><a href=""><p>ランキングページ</p></a></li>
-            <li><a href=""><p>マッチングページ</p></a></li>
+            <li>
+              <a href="./ranking/index.html"><p>ランキングページ</p></a>
+            </li>
+            <li>
+              <a href="./matching/index.html"><p>マッチングページ</p></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -40,7 +44,7 @@
                   があなたを待っています。
                 </p>
                 <!-- todo(seiya): link -->
-                <a href="">メンバーを見てみる</a>
+                <a href="./people/index.html">メンバーを見てみる</a>
               </div>
               <div class="p-main-visual__container__slide">
                 <img src="./img/slides/slideshow01.jpg" alt="" />
@@ -55,9 +59,11 @@
         </section>
         <section>
           <div class="p-quiz-scroll">
-            <h2>みんなのクイズ</h2>
+            <h2 id="a-quiz">みんなのクイズ</h2>
             <ul class="p-quiz-scroll__item-list" id="js-profiles"></ul>
-            <a class="p-quiz-scroll__button" href="">他のメンバーも見てみる</a>
+            <a class="p-quiz-scroll__button" href="./people/index.html"
+              >他のメンバーも見てみる</a
+            >
           </div>
         </section>
         <section>
@@ -104,33 +110,14 @@
           </div>
         </section>
       </article>
-      <div class="p-quiz-modal">
-        <div class="p-quiz-modal__title">
-          <p>ゆりえのクイズ</p>
-        </div>
-        <div class="p-quiz-modal__inner">
-          <ul class="p-quiz-modal__options">
-            <li>あああ</li>
-            <li>いいい</li>
-            <li>ううう</li>
-          </ul>
-          <div class="p-quiz-modal__determine">
-            <p class="p-quiz-modal__determine__text">いいいに挑戦しますか？
-            </p>
-            <div class="p-quiz-modal__determine__buttons">
-              <button class="p-quiz-modal__determine__buttons__yes"><p>YES</p></button>
-              <button class="p-quiz-modal__determine__buttons__no"><p>NO</p></button>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="u-hidden">
         <li id="js-templ-profile">
           <img alt="" />
           <dl>
             <dt></dt>
           </dl>
-          <button><p>クイズをやってみる</p></button>
+          <div class="p-quiz-scroll__choice-wrapper js-choiceWrapper"></div>
         </li>
       </div>
     </main>

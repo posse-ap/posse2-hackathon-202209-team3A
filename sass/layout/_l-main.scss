@@ -16,4 +16,10 @@
 .l-main2 {
   padding: 0 15px;
   width: 100%;
+  position: relative;
+  min-height: calc(100vh - 80px);
+
+  @include pc {
+    min-height: calc(100vh - 100px);
+  }
 }

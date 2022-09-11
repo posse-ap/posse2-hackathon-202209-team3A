@@ -33,20 +33,21 @@
     & li {
       flex-shrink: 0;
       width: 370px;
-      height: 470px;
+      // height: 470px;
       border-radius: 30px;
       background-color: $color-light-green;
+      padding: 30px 0;
 
       @include sp {
         width: 280px;
-        height: 350px;
+        // height: 350px;
+        padding: 20px 0;
       }
     }
 
     & img {
       width: 180px;
       height: 180px;
-      margin-top: 30px;
       border-radius: 50%;
 
       @include sp {
@@ -59,7 +60,7 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 0 75px;
       font-size: 24px;
       font-weight: 400;
@@ -80,10 +81,19 @@
     & dd {
       border-left: 10px solid $color-pink;
     }
+  }
 
-    & button {
-      margin-top: 40px;
-      padding: 15px 30px;
+  &__choice-wrapper {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    overflow-y: auto;
+    height: 150px;
+
+    & a {
+      padding: 10px 30px;
       border-radius: 30px;
       background-color: $color-light-blue02;
       box-shadow: 0 5px 0 #369ada;
