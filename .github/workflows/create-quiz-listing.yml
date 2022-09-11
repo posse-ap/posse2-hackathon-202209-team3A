@@ -23,7 +23,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: feat/quiz_listing
-          base: main
+          base: after
           delete-branch: true
           title: |
             update quiz_listing.json
