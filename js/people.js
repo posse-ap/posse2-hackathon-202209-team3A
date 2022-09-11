@@ -1,6 +1,6 @@
 "use strict";
-const quizListingPath = "./quiz_listing.json";
-const quizImgPath = "./quiz_img";
+const quizListingPath = "./../quiz_listing.json";
+const quizImgPath = "./../quiz_img";
 
 (async () => {
   return await (await fetch(quizListingPath)).json();

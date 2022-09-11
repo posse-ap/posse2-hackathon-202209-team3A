@@ -9,100 +9,27 @@
       href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic"
       rel="stylesheet"
     />
+    <script src="./../js/utils.js" defer></script>
+    <script src="./../js/people.js" defer></script>
     <title>みんなのクイズ</title>
   </head>
   <body>
-    <main class="l-main02">
+    <main class="l-main">
       <div class="p-people">
         <div class="p-people__title">
           <h1>みんなのクイズ</h1>
         </div>
-        <ul class="p-people__item-list">
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-          <li>
-            <img src="../img/icons/icon-seiya.jpg" alt="" />
-            <dl>
-              <dt>3.0期生 せいや</dt>
-            </dl>
-            <button><p>クイズをやってみる</p></button>
-          </li>
-        </ul>
+        <a class="p-back-top" href="../">トップページに戻る</a>
+        <ul class="p-people__item-list" id="js-profiles"></ul>
+      </div>
+      <div class="u-hidden">
+        <li id="js-templ-profile">
+          <img alt="" />
+          <dl>
+            <dt></dt>
+          </dl>
+          <div class="p-quiz-scroll__choice-wrapper js-choiceWrapper"></div>
+        </li>
       </div>
     </main>
     <footer>

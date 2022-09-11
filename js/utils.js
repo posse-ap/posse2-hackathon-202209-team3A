@@ -47,3 +47,27 @@ const setNewScore = (name, quiz, level, triedAt) => {
 
   localStorage.setItem(key, JSON.stringify(data));
 };
+
+// profile
+const setupProfiles = (people, quizImgPath) => {
+  const profiles = document.getElementById("js-profiles");
+  const profileTemplate = document.getElementById("js-templ-profile");
+
+  people.forEach((person) => {
+    const name = person.name;
+    const profile = profileTemplate.cloneNode(true);
+    profile.removeAttribute("id");
+    // tood(takumi) add default image
+    profile.querySelector("img").src = `${quizImgPath}/${name}.jpg`;
+    profile.querySelector("dt").textContent = `3.0期生 ${name}`;
+    profiles.appendChild(profile);
+
+    const choiceWrapper = profile.querySelector(".js-choiceWrapper");
+    person.children.forEach((quiz) => {
+      const a = document.createElement("a");
+      a.href = `./quiz/index.html?person_name=${name}&quiz_name=${quiz.name}`;
+      a.textContent = quiz.name;
+      choiceWrapper.appendChild(a);
+    });
+  });
+};

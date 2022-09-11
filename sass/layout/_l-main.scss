@@ -3,12 +3,13 @@
 
 // todo(takumi) p-main作る
 .l-main {
-  padding: 30px;
+  padding: 15px;
   background-color: $color-skin-color;
   width: 100%;
   min-height: calc(100vh - 80px);
-
+  
   @include pc {
+    padding: 30px;
     min-height: calc(100vh - 100px);
   }
 }

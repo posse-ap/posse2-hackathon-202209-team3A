@@ -2,6 +2,11 @@
 @use "../../foundation/mixin" as *;
 
 .p-people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+
   &__title {
     margin-top: 20px;
     background-color: $color-yellow;
@@ -22,19 +27,22 @@
     text-align: center;
     width: 1200px;
     max-width: 90%;
-    margin: 75px auto 60px;
+    margin: 0px auto;
+
+    @include sp {
+      row-gap: 20px;
+    }
 
     & li {
       width: 280px;
-      height: 350px;
       border-radius: 30px;
       background-color: $color-light-green;
+      padding: 30px 0;
     }
 
     & img {
       width: 100px;
       height: 100px;
-      margin-top: 30px;
       border-radius: 50%;
     }
 
@@ -56,22 +64,6 @@
 
     & dd {
       border-left: 10px solid $color-pink;
-    }
-
-    & button {
-      margin-top: 40px;
-      padding: 15px 30px;
-      border-radius: 30px;
-      background-color: $color-light-blue02;
-      box-shadow: 0 5px 0 #369ada;
-      font-size: 16px;
-      font-weight: bold;
-      color: $color-white;
-
-      &:hover {
-        box-shadow: none;
-        transform: translateY(5px);
-      }
     }
   }
 }

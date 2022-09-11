@@ -47,8 +47,6 @@ const createRanking = () => {
   return ranking;
 };
 
-
-
 const createRankingCell = (rankingCellTemplate, text) => {
   const rankingCell = rankingCellTemplate.cloneNode(false);
   rankingCell.id = "";
@@ -56,7 +54,6 @@ const createRankingCell = (rankingCellTemplate, text) => {
   return rankingCell;
 };
 
-mockScores();
 const ranking = createRanking();
 console.log(ranking);
 const rankingBody = document.getElementById("js-rankingBody");
