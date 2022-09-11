@@ -1,0 +1,32 @@
+[
+  {
+    "question": "中高の部活は？",
+    "choices": ["吹奏楽部", "陸上部", "アメフト部"],
+    "answer": "吹奏楽部"
+  },
+  {
+    "question": "やっていた楽器は？",
+    "choices": ["トランペット", "サックス", "トロンボーン", "ファゴット"],
+    "answer": "トロンボーン"
+  },
+  {
+    "question": "最初に触ったプログラミング言語は？",
+    "choices": ["JavaScript", "Java", "Go"],
+    "answer": "Go"
+  },
+  {
+    "question": "原拓海は人生で1回しかライブに行ったことがありません。誰の？",
+    "choices": ["エドシーラン", "Creepy Nuts", "STUS", "Taylor Swift"],
+    "answer": "エドシーラン"
+  },
+  {
+    "question": "誕生日は？",
+    "choices": ["12/26", "11/2", "2/24"],
+    "answer": "12/26"
+  },
+  {
+    "question": "誕生日のプレゼントはクリスマスと一緒にされていた？",
+    "choices": ["Yes", "No", "そもそもプレゼントという文化がなかった"],
+    "answer": "No"
+  }
+]

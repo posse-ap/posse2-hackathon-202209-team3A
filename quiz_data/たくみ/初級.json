@@ -1,36 +1,39 @@
 [
   {
-    "question": "兄弟はいる？",
+    "question": "兄弟は何人？",
     "choices": ["1人", "2人", "3人"],
     "answer": "3人"
   },
   {
     "question": "趣味は料理？",
-    "choices": ["はい", "", ""],
+    "choices": ["はい"],
     "answer": "はい"
   },
   {
-    "question": "IoTとは何の略でしょう？",
+    "question": "どこに住んでる？",
+    "choices": ["渋谷", "武蔵小杉", "横浜"],
+    "answer": "武蔵小杉"
+  },
+  {
+    "question": "留学に行ってたのは？",
+    "choices": ["アメリカ", "フランス", "イギリス"],
+    "answer": "アメリカ"
+  },
+  {
+    "question": "使ってるパソコン(OS)は？",
+    "choices": ["Windows", "Mac", "linux"],
+    "answer": "Mac"
+  },
+  {
+    "question": "得意料理は？",
     "choices": [
-      "Internet of Things",
-      "Integrate into Technology",
-      "Information on Tool"
+      "カレー",
+      "春巻き",
+      "カボチャサラダ",
+      "ミートソースパスタ",
+      "おにぎり",
+      "焼き芋"
     ],
-    "answer": "Internet of Things"
-  },
-  {
-    "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "choices": ["Society 5.0", "CyPhy", "SDGs"],
-    "answer": "Society 5.0"
-  },
-  {
-    "question": "日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？",
-    "choices": ["Web3.0", "NFT", "メタバース"],
-    "answer": "Web3.0"
-  },
-  {
-    "question": "先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？",
-    "choices": ["約2倍", "約5倍", "約11倍", "plus option"],
-    "answer": "約5倍"
+    "answer": "ミートソースパスタ"
   }
 ]
