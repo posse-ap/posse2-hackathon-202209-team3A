@@ -49,7 +49,7 @@ const setNewScore = (name, quiz, level, triedAt) => {
 };
 
 // profile
-const setupProfiles = (people, quizImgPath) => {
+const setupProfiles = (people, quizImgPath, quizPagePath) => {
   const profiles = document.getElementById("js-profiles");
   const profileTemplate = document.getElementById("js-templ-profile");
 
@@ -65,7 +65,7 @@ const setupProfiles = (people, quizImgPath) => {
     const choiceWrapper = profile.querySelector(".js-choiceWrapper");
     person.children.forEach((quiz) => {
       const a = document.createElement("a");
-      a.href = `./quiz/index.html?person_name=${name}&quiz_name=${quiz.name}`;
+      a.href = `${quizPagePath}/index.html?person_name=${name}&quiz_name=${quiz.name}`;
       a.textContent = quiz.name;
       choiceWrapper.appendChild(a);
     });
