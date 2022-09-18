@@ -2,6 +2,15 @@
   "name": "root",
   "children": [
     {
+      "name": "かずき",
+      "children": [
+        {
+          "file": "quiz_data/かずき/かずきのそっくりさん.json",
+          "name": "かずきのそっくりさん"
+        }
+      ]
+    },
+    {
       "name": "たくみ",
       "children": [
         {
